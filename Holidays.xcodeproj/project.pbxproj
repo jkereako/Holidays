@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		625E7F651BBDA825009A699C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F641BBDA825009A699C /* AppDelegate.swift */; };
-		625E7F671BBDA825009A699C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F661BBDA825009A699C /* ViewController.swift */; };
 		625E7F6A1BBDA825009A699C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E7F681BBDA825009A699C /* Main.storyboard */; };
 		625E7F6C1BBDA825009A699C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625E7F6B1BBDA825009A699C /* Assets.xcassets */; };
 		625E7F6F1BBDA825009A699C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E7F6D1BBDA825009A699C /* LaunchScreen.storyboard */; };
-		625E7F871BBDA85A009A699C /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F861BBDA85A009A699C /* DateTests.swift */; settings = {ASSET_TAGS = (); }; };
-		625E7F891BBDA880009A699C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F881BBDA880009A699C /* Date.swift */; settings = {ASSET_TAGS = (); }; };
+		625E7F871BBDA85A009A699C /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F861BBDA85A009A699C /* DateTests.swift */; };
+		625E7F891BBDA880009A699C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F881BBDA880009A699C /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		625E7F611BBDA825009A699C /* Holidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625E7F641BBDA825009A699C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		625E7F661BBDA825009A699C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		625E7F691BBDA825009A699C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		625E7F6B1BBDA825009A699C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		625E7F6E1BBDA825009A699C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,12 +56,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		624D28841C7A175F00F7A21B /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				625E7F701BBDA825009A699C /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		624D28851C7A176500F7A21B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				625E7F6B1BBDA825009A699C /* Assets.xcassets */,
+				625E7F6D1BBDA825009A699C /* LaunchScreen.storyboard */,
+				625E7F681BBDA825009A699C /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		625E7F581BBDA825009A699C = {
 			isa = PBXGroup;
 			children = (
-				625E7F631BBDA825009A699C /* Holidays */,
-				625E7F781BBDA825009A699C /* HolidaysTests */,
 				625E7F621BBDA825009A699C /* Products */,
+				624D28851C7A176500F7A21B /* Resources */,
+				625E7F631BBDA825009A699C /* Source */,
+				624D28841C7A175F00F7A21B /* SupportFiles */,
+				625E7F781BBDA825009A699C /* Tests */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,27 +94,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		625E7F631BBDA825009A699C /* Holidays */ = {
+		625E7F631BBDA825009A699C /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				625E7F641BBDA825009A699C /* AppDelegate.swift */,
-				625E7F661BBDA825009A699C /* ViewController.swift */,
-				625E7F681BBDA825009A699C /* Main.storyboard */,
-				625E7F6B1BBDA825009A699C /* Assets.xcassets */,
-				625E7F6D1BBDA825009A699C /* LaunchScreen.storyboard */,
-				625E7F701BBDA825009A699C /* Info.plist */,
 				625E7F881BBDA880009A699C /* Date.swift */,
 			);
-			path = Holidays;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		625E7F781BBDA825009A699C /* HolidaysTests */ = {
+		625E7F781BBDA825009A699C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				625E7F7B1BBDA825009A699C /* Info.plist */,
 				625E7F861BBDA85A009A699C /* DateTests.swift */,
+				625E7F7B1BBDA825009A699C /* Info.plist */,
 			);
-			path = HolidaysTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,7 +161,6 @@
 				TargetAttributes = {
 					625E7F601BBDA825009A699C = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = X4GGMZ2HNY;
 					};
 					625E7F741BBDA825009A699C = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -201,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				625E7F671BBDA825009A699C /* ViewController.swift in Sources */,
 				625E7F891BBDA880009A699C /* Date.swift in Sources */,
 				625E7F651BBDA825009A699C /* AppDelegate.swift in Sources */,
 			);
@@ -232,6 +243,7 @@
 				625E7F691BBDA825009A699C /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		625E7F6D1BBDA825009A699C /* LaunchScreen.storyboard */ = {
@@ -240,6 +252,7 @@
 				625E7F6E1BBDA825009A699C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -332,7 +345,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Holidays/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.Holidays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -343,7 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Holidays/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.Holidays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +371,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HolidaysTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.HolidaysTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -366,7 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = HolidaysTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.HolidaysTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,6 +410,7 @@
 				625E7F801BBDA825009A699C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		625E7F811BBDA825009A699C /* Build configuration list for PBXNativeTarget "HolidaysTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +419,7 @@
 				625E7F831BBDA825009A699C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

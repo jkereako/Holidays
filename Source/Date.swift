@@ -26,7 +26,7 @@ class Date {
     return holiday
   }
 
-  // Third Monday of January
+  /// Third Monday of January
   var martinLutherKingJr: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -41,7 +41,7 @@ class Date {
     return holiday
   }
 
-  // Third Monday of February
+  /// Third Monday of February
   var washingtonsBirthday: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -56,6 +56,7 @@ class Date {
     return holiday
   }
 
+  /// February 14
   var valentines: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -69,6 +70,7 @@ class Date {
     return holiday
   }
 
+  /// March 17
   var saintPatricks: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -82,7 +84,7 @@ class Date {
     return holiday
   }
 
-  // Last Monday of May
+  /// Last Monday of May
   var memorial: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -95,6 +97,7 @@ class Date {
     return Holiday(federalHoliday: true, date: date)
   }
 
+  /// July 4
   var independence: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -108,7 +111,7 @@ class Date {
     return holiday
   }
 
-  // First Monday of September
+  /// First Monday of September
   var labor: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -123,7 +126,7 @@ class Date {
     return holiday
   }
 
-  // Second Monday of October
+  /// Second Monday of October
   var columbus: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -138,6 +141,8 @@ class Date {
     return holiday
   }
 
+
+  /// October 31
   var halloween: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -151,6 +156,7 @@ class Date {
     return holiday
   }
 
+  /// November 11
   var veterans: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -164,7 +170,7 @@ class Date {
     return holiday
   }
 
-  // Fourth Thursday of November
+  /// Fourth Thursday of November
   var thanksgiving: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -179,6 +185,7 @@ class Date {
     return holiday
   }
 
+  /// December 25
   var christmas: Holiday {
     let components = NSDateComponents()
     components.year = currentYear
@@ -192,6 +199,7 @@ class Date {
     return holiday
   }
 
+  /// Finds the beginning of the day
   func beginningOfDay(date date: NSDate) -> NSDate {
     let components = NSCalendar.currentCalendar().components(
       [.Year, .Month, .Day], fromDate: date
@@ -205,6 +213,7 @@ class Date {
     return date
   }
 
+  /// Finds the end of the day
   func endOfDay(date date: NSDate) -> NSDate {
     let components = NSDateComponents()
     components.day = 1
@@ -221,6 +230,9 @@ class Date {
 
   }
 
+  /// Adjusts a holiday observation for businesses and schools. For example, if Christmas falls on 
+  /// Saturday, then folks get the previous Friday off. Else, if it falls on a Sunday, then Monday
+  /// is the observed holiday.
   func adjustForBusiness(holiday holiday: Holiday) -> Holiday {
     let components = NSCalendar.currentCalendar().components(
       [.Year, .Month, .Weekday, .Day], fromDate: holiday.date
@@ -228,19 +240,19 @@ class Date {
 
     switch components.weekday {
 
-      // Sunday
+    // Sunday
     case 1:
       // If this holiday is a federal holiday, then the user likely has the day off
       if holiday.federalHoliday {
         components.day++
       }
 
-        // Otherwise, it's a fun day (i.e. Halloween), so, celebreate it on a Friday
+      // Otherwise, it's a fun day (i.e. Halloween), so, celebreate it on a Friday
       else {
         components.day -= 2
       }
 
-      // Saturday
+    // Saturday
     case 7:
       components.day--
 

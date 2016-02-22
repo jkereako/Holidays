@@ -8,16 +8,6 @@
 
 import Foundation
 
-struct Holiday {
-  let federalHoliday: Bool
-  let date: NSDate
-
-  init(federalHoliday fh: Bool, date d: NSDate) {
-    federalHoliday = fh
-    date = d
-  }
-}
-
 class Date {
   var currentYear: Int {
     return NSCalendar.currentCalendar().component(.Year, fromDate: NSDate())

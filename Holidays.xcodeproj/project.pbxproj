@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36AD72F61C7B549000213854 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AD72F51C7B549000213854 /* Holiday.swift */; };
 		625E7F651BBDA825009A699C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F641BBDA825009A699C /* AppDelegate.swift */; };
 		625E7F6A1BBDA825009A699C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E7F681BBDA825009A699C /* Main.storyboard */; };
 		625E7F6C1BBDA825009A699C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625E7F6B1BBDA825009A699C /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36AD72F51C7B549000213854 /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
 		625E7F611BBDA825009A699C /* Holidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625E7F641BBDA825009A699C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		625E7F691BBDA825009A699C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				625E7F641BBDA825009A699C /* AppDelegate.swift */,
+				36AD72F51C7B549000213854 /* Holiday.swift */,
 				625E7F881BBDA880009A699C /* Date.swift */,
 			);
 			path = Source;
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36AD72F61C7B549000213854 /* Holiday.swift in Sources */,
 				625E7F891BBDA880009A699C /* Date.swift in Sources */,
 				625E7F651BBDA825009A699C /* AppDelegate.swift in Sources */,
 			);
@@ -347,7 +351,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.Holidays;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/SupportFiles/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexisdigital.Holidays;
 				PRODUCT_NAME = "$(TARGET_NAME)";

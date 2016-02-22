@@ -7,7 +7,7 @@ Copy the files `Date.swift` and `Holidate.swift` into your project, create a new
 `Date` object, and then query its properties.
 
 ```swift
-let date = Date() print("Saint Patrick's day is on
-\(date.saintPatricks)")
+let date = Date()
+print("Saint Patrick's day is on \(date.saintPatricks)")
 ```
 

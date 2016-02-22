@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		36AD72F61C7B549000213854 /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AD72F51C7B549000213854 /* Holiday.swift */; };
+		36AD72F81C7B579400213854 /* MockDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36AD72F71C7B579400213854 /* MockDate.swift */; };
 		625E7F651BBDA825009A699C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 625E7F641BBDA825009A699C /* AppDelegate.swift */; };
 		625E7F6A1BBDA825009A699C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625E7F681BBDA825009A699C /* Main.storyboard */; };
 		625E7F6C1BBDA825009A699C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625E7F6B1BBDA825009A699C /* Assets.xcassets */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		36AD72F51C7B549000213854 /* Holiday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		36AD72F71C7B579400213854 /* MockDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDate.swift; sourceTree = "<group>"; };
 		625E7F611BBDA825009A699C /* Holidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Holidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		625E7F641BBDA825009A699C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		625E7F691BBDA825009A699C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36AD72F91C7B57B300213854 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				36AD72F71C7B579400213854 /* MockDate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		624D28841C7A175F00F7A21B /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +89,11 @@
 		625E7F581BBDA825009A699C = {
 			isa = PBXGroup;
 			children = (
-				625E7F621BBDA825009A699C /* Products */,
-				624D28851C7A176500F7A21B /* Resources */,
 				625E7F631BBDA825009A699C /* Source */,
-				624D28841C7A175F00F7A21B /* SupportFiles */,
 				625E7F781BBDA825009A699C /* Tests */,
+				624D28851C7A176500F7A21B /* Resources */,
+				624D28841C7A175F00F7A21B /* SupportFiles */,
+				625E7F621BBDA825009A699C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				625E7F641BBDA825009A699C /* AppDelegate.swift */,
-				36AD72F51C7B549000213854 /* Holiday.swift */,
 				625E7F881BBDA880009A699C /* Date.swift */,
+				36AD72F51C7B549000213854 /* Holiday.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 		625E7F781BBDA825009A699C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				36AD72F91C7B57B300213854 /* Mocks */,
 				625E7F861BBDA85A009A699C /* DateTests.swift */,
 				625E7F7B1BBDA825009A699C /* Info.plist */,
 			);
@@ -227,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				625E7F871BBDA85A009A699C /* DateTests.swift in Sources */,
+				36AD72F81C7B579400213854 /* MockDate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,13 +13,6 @@ class DateTests: XCTestCase {
   var date: Date!
 
   override func setUp() {
-
-    class MockDate: Date {
-      override var currentYear: Int {
-        return 2015
-      }
-    }
-
     super.setUp()
     date = MockDate()
   }
